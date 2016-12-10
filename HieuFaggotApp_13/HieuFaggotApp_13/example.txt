@@ -1,4 +1,0 @@
-Alice 10
-Betty 11
-Cathy 9
-Eve 12
