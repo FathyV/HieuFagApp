@@ -40,7 +40,7 @@ void Stack02::forward()
 
 bool Stack02::validate()
 {	
-	bool isValidated = true;
+	bool isValidated = false;
 	int length = size(content) - 1;
 	int iCount = 0;
 	for (int i = 0;i <= length;i++) {
@@ -56,27 +56,34 @@ bool Stack02::validate()
 		}
 		if (content[i] == '}' || content[i] == ']' || content[i] == ')') {
 			Item * temp = pop();
+			forward();
 			if (content[i] == '}') {
-				forward();
-				if (temp->getContent() != "{") {
-					isValidated= false;
+				if (temp->getContent() == "{") {
+					isValidated= true;
+				}
+				else {
+					return false;
 				}
 			}
 			if (content[i] == ']') {
-				forward();
-				if (temp->getContent() != "[") {
-					isValidated = false;
+				if (temp->getContent() == "[") {
+					isValidated = true;
+				}
+				else {
+					return false;
 				}
 			}
 			if (content[i] == ')') {
-				forward();
-				if (temp->getContent() != "(") {
-					isValidated = false;
+				if (temp->getContent() == "(") {
+					isValidated = true;
+				}
+				else {
+					return false;
 				}
 			}
 		}		
 	}
-	return true;
+	return isValidated;
 }
 
 void Stack02::setContent(string input)
