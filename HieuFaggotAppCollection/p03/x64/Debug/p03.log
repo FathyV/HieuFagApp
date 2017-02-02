@@ -1,0 +1,7 @@
+﻿  Scan03.cpp
+f:\sourcetree\hieufaggotappcollection\p03\scan03.cpp(15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  p03.cpp
+  p03.vcxproj -> F:\SourceTree\HieuFaggotAppCollection\x64\Debug\p03.exe
+  p03.vcxproj -> F:\SourceTree\HieuFaggotAppCollection\x64\Debug\p03.pdb (Full PDB)

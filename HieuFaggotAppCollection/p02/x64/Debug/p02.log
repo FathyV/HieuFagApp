@@ -1,3 +1,5 @@
 ﻿  p02.cpp
+  LINK : F:\SourceTree\HieuFaggotAppCollection\x64\Debug\p02.exe not found or not built by the last incremental link; performing full link
+Stack02.obj : warning LNK4099: PDB 'vc140.pdb' was not found with 'Stack02.obj' or at 'F:\SourceTree\HieuFaggotAppCollection\x64\Debug\vc140.pdb'; linking object as if no debug info
   p02.vcxproj -> F:\SourceTree\HieuFaggotAppCollection\x64\Debug\p02.exe
   p02.vcxproj -> F:\SourceTree\HieuFaggotAppCollection\x64\Debug\p02.pdb (Full PDB)
